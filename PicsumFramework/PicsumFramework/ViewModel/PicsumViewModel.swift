@@ -14,7 +14,6 @@ class PicsumViewModel: ObservableObject {
     @Published var picusmData: [PicsumModel] = []
     private let baseURL = "https://picsum.photos/v2/list"
     weak var delegate: ReloadGalleryDataDelegate?
-    var selectedZoomIndex = -1
     
     func getHomeData() {
         NetworkManager.shared.getData(baseUrl: baseURL, type: PicsumModel.self)

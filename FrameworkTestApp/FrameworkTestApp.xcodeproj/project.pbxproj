@@ -13,8 +13,8 @@
 		84170B6228BA34D900EBA5F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84170B6028BA34D900EBA5F5 /* Main.storyboard */; };
 		84170B6428BA34DD00EBA5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84170B6328BA34DD00EBA5F5 /* Assets.xcassets */; };
 		84170B6728BA34DD00EBA5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84170B6528BA34DD00EBA5F5 /* LaunchScreen.storyboard */; };
-		8481B4A028BB61F400AD3875 /* PicsumFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8481B49E28BB61F100AD3875 /* PicsumFramework.framework */; };
-		8481B4A128BB61F400AD3875 /* PicsumFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8481B49E28BB61F100AD3875 /* PicsumFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84AA0EDA28BBD88B001B4874 /* PicsumFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA0ED828BBD87F001B4874 /* PicsumFramework.framework */; };
+		84AA0EDB28BBD88B001B4874 /* PicsumFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA0ED828BBD87F001B4874 /* PicsumFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAAC463A83CB0065272FAA32 /* Pods_FrameworkTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43DC1A4B151F56EE9B20E10 /* Pods_FrameworkTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8481B4A128BB61F400AD3875 /* PicsumFramework.framework in Embed Frameworks */,
+				84AA0EDB28BBD88B001B4874 /* PicsumFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +41,7 @@
 		84170B6328BA34DD00EBA5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84170B6628BA34DD00EBA5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84170B6828BA34DD00EBA5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8481B49E28BB61F100AD3875 /* PicsumFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PicsumFramework.framework; sourceTree = "<group>"; };
+		84AA0ED828BBD87F001B4874 /* PicsumFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PicsumFramework.framework; sourceTree = "<group>"; };
 		91B953F58AE216FA21F02CE7 /* Pods-FrameworkTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkTestApp.release.xcconfig"; path = "Target Support Files/Pods-FrameworkTestApp/Pods-FrameworkTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		C058F05DF21C637B5EFCB39A /* Pods-FrameworkTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkTestApp.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkTestApp/Pods-FrameworkTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F43DC1A4B151F56EE9B20E10 /* Pods_FrameworkTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8481B4A028BB61F400AD3875 /* PicsumFramework.framework in Frameworks */,
+				84AA0EDA28BBD88B001B4874 /* PicsumFramework.framework in Frameworks */,
 				BAAC463A83CB0065272FAA32 /* Pods_FrameworkTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,6 @@
 				C058F05DF21C637B5EFCB39A /* Pods-FrameworkTestApp.debug.xcconfig */,
 				91B953F58AE216FA21F02CE7 /* Pods-FrameworkTestApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,7 +104,7 @@
 		84170B6E28BA34E700EBA5F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8481B49E28BB61F100AD3875 /* PicsumFramework.framework */,
+				84AA0ED828BBD87F001B4874 /* PicsumFramework.framework */,
 				F43DC1A4B151F56EE9B20E10 /* Pods_FrameworkTestApp.framework */,
 			);
 			name = Frameworks;

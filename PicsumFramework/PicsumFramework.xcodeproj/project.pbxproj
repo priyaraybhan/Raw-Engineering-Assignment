@@ -72,7 +72,6 @@
 				8A6FCE64FA3AFBCF73F39EBB /* Pods-PicsumFramework.debug.xcconfig */,
 				DD1BDA3AF768F4E3EE8C1059 /* Pods-PicsumFramework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

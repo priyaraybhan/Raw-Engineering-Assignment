@@ -52,13 +52,11 @@ extension ListingViewController: UICollectionViewDataSource, UICollectionViewDel
         let selectedCell = self.listingCollectionView.cellForItem(at: indexPath)  as? CollectionViewCell
         self.listingCollectionView.bringSubviewToFront(selectedCell!)
 
-        if viewModel.selectedZoomIndex == indexPath.item {
+        if selectedCell?.transform == CGAffineTransform(scaleX: 1.2, y: 2) {
             UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 0, options: [], animations: {
                 selectedCell?.transform = .identity
             })
-            viewModel.selectedZoomIndex = -1
         } else {
-            viewModel.selectedZoomIndex = indexPath.item
             UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 0, options: [], animations: {
                 selectedCell?.transform = CGAffineTransform(scaleX: 1.2, y: 2)
                 })
@@ -68,7 +66,6 @@ extension ListingViewController: UICollectionViewDataSource, UICollectionViewDel
     
     public func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         let unselectedCell = self.listingCollectionView.cellForItem(at: indexPath)  as? CollectionViewCell
-        viewModel.selectedZoomIndex = -1
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 0, options: [], animations: {
             unselectedCell?.transform = .identity
         })

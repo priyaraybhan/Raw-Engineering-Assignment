@@ -1,0 +1,11 @@
+framework module PicsumFramework {
+  umbrella header "PicsumFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module PicsumFramework.Swift {
+    header "PicsumFramework-Swift.h"
+    requires objc
+}
